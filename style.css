@@ -1,0 +1,381 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*kutu çizgisi de yer kaplamasın*/
+}
+
+/*nav START*/
+
+nav
+{
+    background-color: #304858;
+    height: 7rem;
+
+}
+.nav-item .nav-button
+{
+    font-size: 2rem;
+    color: #304858;
+    background-color: #c8c4bc;
+    margin-top: 1.2rem;
+    text-shadow: 0 2px 4px rgb(200,196,188) ;
+    position: center;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+/*leftBar start*/
+
+section
+{
+    position: fixed; /*solda sabit kalsın*/
+    width: 30rem; 
+    height: 80%;
+    background-color: #304858;
+    padding-top: 3rem;
+    margin-top: -4rem;
+    margin-left: 2rem;
+    border: 5px double #c8c4bc;
+    border-radius: 2rem;
+    left: -200%;
+    transition: left 2s;
+    z-index: 2;
+    opacity: 1;
+}
+
+section .close-btn
+{
+    margin-top: -3rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    font-size: 1.25em;
+    color: #c8c4bc;
+}
+section .close-btn #ico1
+{
+    cursor: pointer;
+}
+
+.leftBarİmg
+{
+   margin-top: 2rem;
+   padding-right: 1.2rem;
+   width: 25rem;
+   border-radius: 3rem;
+}
+button
+{
+    display: inline-block;
+}
+.button-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+.home-btn {
+    background-color: #c8c4bc;
+    color: #304858;
+    width: 83%;
+    height: 5rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-btn 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.section-btn2
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 3rem;
+    margin-left: 1rem;
+}
+
+.info-btn
+{
+    background-color: #c8c4bc;
+    color: #304858;
+    width: 80%;
+    height: 4rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    border: none;
+}  
+.contact-btn
+{
+    background-color: #c8c4bc;
+    color: #304858;
+    width: 80%;
+    height: 4rem;
+    border-radius: 1rem;
+    border: none;
+    display: inline-block;
+}
+.bttn
+{
+    font-size: 2rem;
+    background-color: #c8c4bc;
+    color: #304858;
+    width: 90%;
+    height: 5rem;
+    border-radius: 1rem;
+    border: none;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+/*article start*/
+
+.article-container
+{
+    background-color:  #aaa69da8;
+    width: 100%;
+    height: 40rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.article-container p
+{
+    font-size: 1.8rem;
+    font-family: 'Play', sans-serif;
+    color: #304858;
+}
+
+#article-images
+{
+ 
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 5rem;
+   
+}
+.article-images1
+{
+    margin-top: -3rem;
+}
+
+.col
+{
+    float: left;
+    width: 33.333%;
+    padding: 10px;
+}
+.article-item
+{
+   
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20rem;
+    height: 20rem; 
+    position: relative;
+}
+
+.img-fluid
+{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    
+}
+.article-item img
+{
+    display: block;
+}
+.img-overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: #304858;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: aliceblue;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.img-overlay .icon
+{
+    color: #1c1b1b;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.article-item:hover .img-overlay
+{
+    opacity: 4;
+    transform: scale(1.1);
+}
+
+/*grp start*/
+
+.grp-h1
+{
+    background-color: #aaa69da8;
+    color: white;
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    color: #304858;
+
+}
+.grp-h1 p
+{
+    font-size: 1rem;
+    font-family: 'Play', sans-serif;
+}
+
+.grp-h1 h2::after
+{
+    content: "";
+    width: 300px;
+    height: 3px;
+    background-color: #304858;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1rem;
+}
+
+.grp-container
+{ 
+  margin-bottom: 3rem;
+  background-color: #c8c4bc ;
+  display: flex;
+  align-items: center;
+
+  min-height: 40rem;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.chart
+{
+  padding: 2rem;
+  border: 3px solid  #304858;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+}
+/*portfolio start*/
+
+.portfolio
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item
+{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.portfolio-item img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: #304858;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: aliceblue;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.portfolio-item:hover .overlay
+{
+    top: 0;
+}
+.portfolio-item:hover img
+{
+    transform: scale(1.1); /*mouse üstüne geldiğinde resim büyür*/
+}
+.portfolio-p
+{
+    background-color: #aaa69da8;
+    text-align: center;
+    margin-top: -3rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+  
+}
+
+.line 
+{
+    height: 400px;
+    width: 9px;
+    position: absolute;
+    left: 6%;
+    top: 200%;
+    transform: translateY(50%);
+    border: 9px double #304858;
+    border-radius: 3rem;
+
+  
+  }
+  .line1 
+  {
+    height: 400px;
+    width: 9px;
+    position: absolute;
+    right: 6%;
+    top: 200%;
+    transform: translateY(50%);
+    border: 9px double #304858;
+    border-radius: 3rem;
+  
+  }
+
+    .grp-container .contect-p
+  {
+    
+    text-align: center;
+    font-size: 1.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+/*footer start*/
+
+ .footer-container
+ {
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+    padding-top: 1.5rem;
+    background-color: #304858;
+ }
+ .text
+ {
+    font-family: 'Play', sans-serif;
+ }
